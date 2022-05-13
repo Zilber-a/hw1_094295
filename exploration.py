@@ -89,8 +89,3 @@ print(num_sepsis, "/", i, " are labeled Sepsis")
 print("NA in each column")
 print(df_all.isna().sum() / len(df_all))  # feature is missing for a patient row iff it is in nan in all of its rows
 print("Number of patients with no missing values is ", df_all.dropna().shape[0], "/", i, )
-
-
-x = ['HR', 'O2Sat', 'Temp', 'SBP', 'MAP', 'DBP', 'Resp', 'BaseExcess', 'SaO2', 'AST', 'BUN',
-     'Alkalinephos', 'Calcium', 'Creatinine', 'Bilirubin_direct', 'Glucose', 'Bilirubin_total',
-     'TroponinI', 'Hct', 'Hgb', 'PTT', 'WBC', 'Fibrinogen', 'Platelets', 'Age', 'Gender', 'HospAdmTime']
