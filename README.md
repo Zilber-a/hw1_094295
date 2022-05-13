@@ -5,7 +5,7 @@ Exploration:
 
 Baseline model:
 
-2. preprocess_info.py - save features means and std, save relevant features
+2. preprocess_info.py - save features' mean and std, save relevant features
 3. preprocess_baseline.py - save preprocessed train and test
 4. train_baseline.py - fit and test baseline model
 
