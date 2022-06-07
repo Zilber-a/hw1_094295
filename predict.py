@@ -32,6 +32,6 @@ if __name__ == '__main__':
     print("Precision score: ", precision_score(target, [x[1] for x in preds]))
     print("Recall score: ", recall_score(target, [x[1] for x in preds]))
     print("Accuracy score: ", accuracy_score(target, [x[1] for x in preds]))
-    df = pd.DataFrame(preds, columns=['Id', 'SepsisLabel'])
-    df.to_csv("prediction.csv", index=False)  # save results as csv
+    df = pd.DataFrame(preds)
+    df.to_csv("prediction.csv", index=False, header=False)  # save results as csv
 
